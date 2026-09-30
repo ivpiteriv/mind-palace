@@ -1,18 +1,65 @@
 #EXTM3U
-# Curated OTTPlayer test playlist — Germany + Russian-language Europe
+# Curated OTTPlayer playlist — Germany + Russian-language entertainment
 # Public stream URLs only. No account-bound/provider tokens.
+# Last curated: 2026-09-30
 
-# ===== Русское ТВ / TEST =====
+# ===== Русское ТВ =====
 
-#EXTINF:-1 tvg-id="RTVi.ru@SD" group-title="Русское ТВ",RTVi — Test A
+#EXTINF:-1 tvg-id="TNT.ru@SD" group-title="Русское ТВ",ТНТ
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://shift03.isp.bg/RTVi/index.m3u8
+http://flussonic.linkintel.ru/tnt/index.m3u8
 
-#EXTINF:-1 tvg-id="RTVi.ru@SD" group-title="Русское ТВ",RTVi — Test B
-https://s70378.cdn.ngenix.net/rtvi/index.m3u8
+#EXTINF:-1 tvg-id="TNT4International.ru@SD" group-title="Русское ТВ",ТНТ4
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://fs.uplink.kz/tnt4/mono.m3u8?token=onlinetv
 
-#EXTINF:-1 tvg-id="EuronewsRussian.fr@SD" group-title="Русское ТВ",Euronews Russian
-https://cdn-euronews.akamaized.net/live/eds/euronews-ru/25071/index.m3u8
+#EXTINF:-1 tvg-id="STS.ru@SD" group-title="Русское ТВ",СТС
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://fs.uplink.kz/sts/mono.m3u8?token=onlinetv
+
+#EXTINF:-1 tvg-id="STSLove.ru@SD" group-title="Русское ТВ",СТС Love
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://fs.uplink.kz/sts_love/mono.m3u8?token=onlinetv
+
+#EXTINF:-1 tvg-id="Domashniy.ru@SD" group-title="Русское ТВ",Домашний
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://fs.uplink.kz/domashniy/mono.m3u8?token=onlinetv
+
+#EXTINF:-1 tvg-id="Friday.ru@SD" group-title="Русское ТВ",Пятница!
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+http://flussonic.linkintel.ru/Pyatnica/index.m3u8
+
+#EXTINF:-1 tvg-id="TV3.ru@SD" group-title="Русское ТВ",ТВ-3
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+http://flussonic.linkintel.ru/tv-3/index.m3u8
+
+#EXTINF:-1 tvg-id="Mir.ru@HD" group-title="Русское ТВ",Мир
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+http://hls.mirtv.cdnvideo.ru/mirtv-parampublish/mirtv_2500/playlist.m3u8
+
+#EXTINF:-1 tvg-id="MosfilmGoldCollection.ru@SD" group-title="Русское ТВ",Мосфильм Золотая коллекция
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://fs.uplink.kz/mosfilm/mono.m3u8?token=onlinetv
+
+#EXTINF:-1 tvg-id="Sarafan.ru@SD" group-title="Русское ТВ",Сарафан
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://fs.uplink.kz/sarafan/mono.m3u8?token=onlinetv
+
+#EXTINF:-1 tvg-id="Channel5International.ru@SD" group-title="Русское ТВ",Пятый канал International
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://fs.uplink.kz/5_kanal/mono.m3u8?token=onlinetv
+
+#EXTINF:-1 tvg-id="Carousel.ru@SD" group-title="Русское ТВ",Карусель
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://stream.smotrim.ru/hls2/karusel/playlist_3.m3u8
+
+#EXTINF:-1 tvg-id="Moymir.ru@SD" group-title="Русское ТВ",Мой Мир
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://moymir.ru/hls/onair.m3u8
+
+#EXTINF:-1 tvg-id="2x2.ru@SD" group-title="Русское ТВ",2x2
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+http://176.118.197.101/2x2/index.m3u8
 
 # ===== Deutschland =====
 
