@@ -1,0 +1,45 @@
+name: IPTV stream check
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/stream-check.yml"
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check candidate streams
+        shell: bash
+        run: |
+          set +e
+          check() {
+            name="$1"
+            url="$2"
+            tmp="$(mktemp)"
+            code="$(curl -L --connect-timeout 5 --max-time 12 -A 'Mozilla/5.0' -sS -o "$tmp" -w '%{http_code}' "$url")"
+            if [ "$code" = "200" ] && grep -qE '^#EXTM3U|^#EXT-X-' "$tmp"; then
+              echo "OK|$name|HTTP $code|$url"
+            else
+              echo "FAIL|$name|HTTP $code|$url"
+              head -c 120 "$tmp" | tr '\n' ' '; echo
+            fi
+            rm -f "$tmp"
+          }
+
+          check "RTVi-alt" "http://str2.iptvhd.ru:8080/RTVi/index.m3u8"
+          check "TNT" "http://flussonic.linkintel.ru/tnt/index.m3u8"
+          check "TNT4" "https://fs.uplink.kz/tnt4/mono.m3u8?token=onlinetv"
+          check "STS" "https://fs.uplink.kz/sts/mono.m3u8?token=onlinetv"
+          check "STS Love" "https://fs.uplink.kz/sts_love/mono.m3u8?token=onlinetv"
+          check "Domashniy" "https://fs.uplink.kz/domashniy/mono.m3u8?token=onlinetv"
+          check "Friday" "http://flussonic.linkintel.ru/Pyatnica/index.m3u8"
+          check "TV-3" "http://flussonic.linkintel.ru/tv-3/index.m3u8"
+          check "Mir" "http://hls.mirtv.cdnvideo.ru/mirtv-parampublish/mirtv_2500/playlist.m3u8"
+          check "Mosfilm Gold" "https://fs.uplink.kz/mosfilm/mono.m3u8?token=onlinetv"
+          check "Sarafan" "https://fs.uplink.kz/sarafan/mono.m3u8?token=onlinetv"
+          check "Channel 5 International" "https://fs.uplink.kz/5_kanal/mono.m3u8?token=onlinetv"
+          check "Karusel" "https://stream.smotrim.ru/hls2/karusel/playlist_3.m3u8"
+          check "Moy Mir" "https://moymir.ru/hls/onair.m3u8"
+          check "2x2" "http://176.118.197.101/2x2/index.m3u8"
