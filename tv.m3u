@@ -1,9 +1,10 @@
 #EXTM3U
 # Curated OTTPlayer playlist — Germany + Russian-language entertainment
 # Public stream URLs only. No account-bound/provider tokens.
+# Channel names are kept close to official names to improve OTTPlayer EPG matching.
 # Last curated: 2026-09-30
 
-# ===== Русское ТВ =====
+# ===== Русское ТВ — Unterhaltung =====
 
 #EXTINF:-1 tvg-id="TNT.ru@SD" group-title="Русское ТВ",ТНТ
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
@@ -33,37 +34,105 @@ http://flussonic.linkintel.ru/Pyatnica/index.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 http://flussonic.linkintel.ru/tv-3/index.m3u8
 
-#EXTINF:-1 tvg-id="Mir.ru@HD" group-title="Русское ТВ",Мир
+#EXTINF:-1 tvg-id="Mir.ru@HD" group-title="Русское ТВ",МИР
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 http://hls.mirtv.cdnvideo.ru/mirtv-parampublish/mirtv_2500/playlist.m3u8
-
-#EXTINF:-1 tvg-id="MosfilmGoldCollection.ru@SD" group-title="Русское ТВ",Мосфильм Золотая коллекция
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://fs.uplink.kz/mosfilm/mono.m3u8?token=onlinetv
 
 #EXTINF:-1 tvg-id="Sarafan.ru@SD" group-title="Русское ТВ",Сарафан
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://fs.uplink.kz/sarafan/mono.m3u8?token=onlinetv
 
-#EXTINF:-1 tvg-id="Channel5International.ru@SD" group-title="Русское ТВ",Пятый канал International
+#EXTINF:-1 tvg-id="KVNTV.ru@SD" group-title="Русское ТВ",КВН ТВ
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://fs.uplink.kz/5_kanal/mono.m3u8?token=onlinetv
-
-#EXTINF:-1 tvg-id="Carousel.ru@SD" group-title="Русское ТВ",Карусель
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://stream.smotrim.ru/hls2/karusel/playlist_3.m3u8
-
-#EXTINF:-1 tvg-id="Moymir.ru@SD" group-title="Русское ТВ",Мой Мир
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://moymir.ru/hls/onair.m3u8
+https://fs.uplink.kz/kvn_tv/mono.m3u8?token=onlinetv
 
 #EXTINF:-1 tvg-id="2x2.ru@SD" group-title="Русское ТВ",2x2
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 http://176.118.197.101/2x2/index.m3u8
 
+# ===== Русское ТВ — Kino & Serien =====
+
+#EXTINF:-1 tvg-id="MosfilmGoldCollection.ru@SD" group-title="Русское кино",Мосфильм. Золотая коллекция
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://fs.uplink.kz/mosfilm/mono.m3u8?token=onlinetv
+
+#EXTINF:-1 tvg-id="Domkino.ru@International" group-title="Русское кино",Дом кино
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://fs.uplink.kz/dom_kino/mono.m3u8?token=onlinetv
+
+#EXTINF:-1 tvg-id="DomkinoPremium.ru@HD" group-title="Русское кино",Дом кино Премиум
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://fs.uplink.kz/dom_kino_premium/mono.m3u8?token=onlinetv
+
+#EXTINF:-1 tvg-id="Evrokino.ru@SD" group-title="Русское кино",Еврокино
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://fs.uplink.kz/eurokino/mono.m3u8?token=onlinetv
+
+#EXTINF:-1 tvg-id="KinoHit.ru@SD" group-title="Русское кино",Кинохит
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://fs.uplink.kz/kinohit/mono.m3u8?token=onlinetv
+
+#EXTINF:-1 tvg-id="Russkiyroman.ru@SD" group-title="Русское кино",Русский роман
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://vod.tuva.ru/rusroman/index.m3u8
+
+# ===== Русское ТВ — Wissen & Freizeit =====
+
+#EXTINF:-1 tvg-id="RussiaK.ru@SD" group-title="Русское ТВ",Россия-К
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://stream.smotrim.ru/hls2/russia_k/playlist_5.m3u8
+
+#EXTINF:-1 tvg-id="MoyaPlaneta.ru@SD" group-title="Русское ТВ",Моя Планета
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://fs.uplink.kz/moya_planeta/mono.m3u8?token=onlinetv
+
+#EXTINF:-1 tvg-id="Telecafe.ru@SD" group-title="Русское ТВ",Телекафе
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://fs.uplink.kz/telecafe/mono.m3u8?token=onlinetv
+
+#EXTINF:-1 tvg-id="Rybalkaiokhota.ru@SD" group-title="Русское ТВ",Рыбалка и охота
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://fs.uplink.kz/ohota_i_ribalka/mono.m3u8?token=onlinetv
+
+#EXTINF:-1 tvg-id="Ohotnikirybolov.ru@SD" group-title="Русское ТВ",Охотник и рыболов
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://stream8.cinerama.uz/1413/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-id="Moymir.ru@SD" group-title="Русское ТВ",Мой Мир
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://moymir.ru/hls/onair.m3u8
+
+# ===== Русское ТВ — Musik =====
+
+#EXTINF:-1 tvg-id="MuzTV.ru@SD" group-title="Русская музыка",МУЗ-ТВ
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://fs.uplink.kz/muz_tv/mono.m3u8?token=onlinetv
+
+#EXTINF:-1 tvg-id="RUTV.ru@SD" group-title="Русская музыка",RU.TV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://fs.uplink.kz/RuTV/mono.m3u8?token=onlinetv
+
+#EXTINF:-1 tvg-id="ShansonTV.ru@SD" group-title="Русская музыка",Шансон ТВ
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://fs.uplink.kz/shanson/mono.m3u8?token=onlinetv
+
+#EXTINF:-1 tvg-id="EuropaPlusTV.ru@SD" group-title="Русская музыка",Europa Plus TV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://fs.uplink.kz/europa_plus/mono.m3u8?token=onlinetv
+
+# ===== Русское ТВ — Kinder =====
+
+#EXTINF:-1 tvg-id="Carousel.ru@SD" group-title="Русское ТВ",Карусель
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://stream.smotrim.ru/hls2/karusel/playlist_3.m3u8
+
+#EXTINF:-1 tvg-id="Channel5International.ru@SD" group-title="Русское ТВ",Пятый канал International
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://fs.uplink.kz/5_kanal/mono.m3u8?token=onlinetv
+
 # ===== Deutschland =====
 
-#EXTINF:-1 tvg-id="DasErste.de@HD" group-title="Deutschland",Das Erste HD
+#EXTINF:-1 tvg-id="DasErste.de@HD" group-title="Deutschland",Das Erste
 https://daserste-live.ard-mcdn.de/daserste/live/hls/int/master.m3u8
 
 #EXTINF:-1 tvg-id="ZDF.de@SD" group-title="Deutschland",ZDF
@@ -75,7 +144,7 @@ https://artesimulcast.akamaized.net/hls/live/2030993/artelive_de/index.m3u8
 #EXTINF:-1 tvg-id="3sat.de@SD" group-title="Deutschland",3sat
 https://zdf-hls-18.akamaized.net/hls/live/2016501/dach/high/master.m3u8
 
-#EXTINF:-1 tvg-id="phoenix.de@HD" group-title="Deutschland",Phoenix
+#EXTINF:-1 tvg-id="phoenix.de@HD" group-title="Deutschland",phoenix
 https://zdf-hls-19.akamaized.net/hls/live/2016502/de/high/master.m3u8
 
 #EXTINF:-1 tvg-id="tagesschau24.de@SD" group-title="Deutschland",tagesschau24
