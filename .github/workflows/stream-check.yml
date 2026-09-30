@@ -58,3 +58,5 @@ jobs:
           check "Europa Plus TV" "https://fs.uplink.kz/europa_plus/mono.m3u8?token=onlinetv"
           check "Rybalka i okhota" "https://fs.uplink.kz/ohota_i_ribalka/mono.m3u8?token=onlinetv"
           check "Ohotnik i rybolov" "https://stream8.cinerama.uz/1413/tracks-v1a1/mono.m3u8"
+          check "Russia-K" "https://stream.smotrim.ru/hls2/russia_k/playlist_5.m3u8"
+          check "Dom kino Premium" "https://fs.uplink.kz/dom_kino_premium/mono.m3u8?token=onlinetv"
